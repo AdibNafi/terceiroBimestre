@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demonstracao"></p>
+    
+    <script> 
+    //Create an Array
+    const frutas = ["banana", "Laranja", "Maçã", "Manga", "kiwi"];
+
+    //create an iterator
+const list = frutas.entries();
+
+//List the entries 
+let texto = " ";
+for (let x of list) {
+    texto = texto + x + "<br>";
+}
+document.getElementById("demonstracao").innerHTML = texto;
+    </script>
+</body>
+</html>
